@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: pythonapp
-        image: 081995/pythonapp:latest
+        image: 081995/pythonapp-dev:latest
         imagePullPolicy: "Always"
         resources:
           limits:
