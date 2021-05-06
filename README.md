@@ -27,17 +27,17 @@
 
 
 04. Jenkins is my choice. <br />
-Dev: <br />
-    - Jenkinsfile: ./jenkins/jenkinsfile_dev.jenkinsfile <br />
-    - Configuration: This Jenkins job will point to "develop" branch. This job is started daily or any new commit to "develop" branch. If everything test is OK, develop branch will create a merge request to merge  to "release" branch. <br />
+    Dev: <br />
+        - Jenkinsfile: ./jenkins/jenkinsfile_dev.jenkinsfile <br />
+        - Configuration: This Jenkins job will point to "develop" branch. This job is started daily or any new commit to "develop" branch. If everything test is OK, develop branch will create a merge request to merge  to "release" branch. <br />
 
-Stagging: <br />
-    - Jenkinsfile: ./jenkins/jenkinsfile_stg.jenkinsfile <br />
-    - Configuration: This Jenkins job will point to "release" branch. This job is started by manual. If everything test is OK, release branch will create a merge request to merge to "master" branch. <br />
+    Stagging: <br />
+        - Jenkinsfile: ./jenkins/jenkinsfile_stg.jenkinsfile <br />
+        - Configuration: This Jenkins job will point to "release" branch. This job is started by manual. If everything test is OK, release branch will create a merge request to merge to "master" branch. <br />
 
-Production: <br />
-    - Jenkinsfile: ./jenkins/jenkinsfile_prd.jenkinsfile <br />
-    - Configuration: This Jenkins job will point to "master" branch. This job is started by manual <br />
+    Production: <br />
+        - Jenkinsfile: ./jenkins/jenkinsfile_prd.jenkinsfile <br />
+        - Configuration: This Jenkins job will point to "master" branch. This job is started by manual <br />
 
 
 05. For the resource of K8s cluster: Resources are a key ingredient that can greatly affect response times. If do not enough resource, response times will be high or maybe application is stuck. <br />
